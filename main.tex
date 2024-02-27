@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Rapport de projet}
+\author{NGUAZONG TSAFACK Aurel\\20P001\\AIA-4}
+\date{February 2024}
+
+\begin{document}
+
+\maketitle
+\section{Introduction}
+
+Les périphériques d’interface humaine (HID) sont une définition de classe de périphérique qui remplace les connecteurs de style PS/2 par un pilote USB générique pour prendre en charge les périphériques HID tels que les claviers, les souris, les contrôleurs de jeu, etc. Alors ceux-ci ont une importance primordiale dans le contrôle de nos machines et il faudrait savoir les manipuler d'où le projet.
+
+\section{Méthodologie de travail}
+\subsection{Technologie utilisée}
+Lors de la scession de programmation du logiciel, nous avons choisi d'utiliser le langage \textbf{python} avec le GUI \textbf{Pygame} dans l'IDE \textbf{Visual Studio Code}.
+\subsection{Installation des librairies}
+Concernant ce projet, nous devrons importer la bibliothèque pygame en utilisant la commande:\\
+import pygame\\
+\\
+Dans le cas où il n'y a pas la librairie installer dans la machine, veuillez lancer cette commande dans votre terminal si vous êtes sous Windows:\\
+pip install pygame\\
+\\
+\subsection{Code}
+Suite à l'installation des librairies :\\
+import pygame\\
+from pygame.locals import *\\
+\\
+
+L'on doit configurer l'interface de pygame qui va recevoir le texte de la touche appuyée qui s'affiche selon: touche pressée :(touche pressée). Pour résumer simplement, l'on récupère grâce à la gestion des évènements de pygame qui enregistre la touche récupérée dans une variable:\\
+touche = pygame.key.name(evenement.key)
+\section{Problèmes rencontrées}
+Lors de développement, nous avons rencontré un souci lors de la récupération de la touche qui débouchais sur une boucle infinie, mais résolu par une recherche sur chatgpt.
+
+\end{document}
